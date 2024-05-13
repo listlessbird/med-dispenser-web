@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "bun run build && bun src/index.ts",
+  "buildCommand": "bun run build",
   "rewrites": [
     { "source": "/public/:match*", "destination": "/:match*" },
     { "source": "/(.*)", "destination": "/api" }

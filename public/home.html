@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MEDCOM-MEDICINE DISPENSER</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+    <link rel="stylesheet" href="/static/main.css" />
+    <link rel="stylesheet" href="/static/out.css" />
+
+    <link
+      href="{{ url_for('templates', path='/styles.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('templates', path='/main.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="w-full">
+      <nav class="w-full">
+        <ul class="flex justify-around w-full flex-wrap">
+          <div class="flex">
+            <li><a class="text-sm" href="#top">Home</a></li>
+            <li><a class="text-sm" href="#about">About</a></li>
+            <li><a class="text-sm" href="#features">Features</a></li>
+            <li><a class="text-sm" href="#team">Team</a></li>
+            <li><a class="text-sm" href="#contact">Contact</a></li>
+          </div>
+          <li>
+            <a href="/login">Login</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-content">
+        <h1 class="font-black text-[#E6E6FA] m-0 p-0 text-5xl">MEDCOM</h1>
+        <h2 class="medicine">
+          <span class="med-part"><br />MEDICINE</span>
+          <span class="com-part">DISPENSER</span><br />
+        </h2>
+
+        <p class="text-pretty text-lg">
+          Forget pharmacy queues, say hello to smart medication delivery.<br />
+          MedCom brings your doctor's orders directly to you.
+        </p>
+        <a href="#contact" class="cta">Get in Touch</a>
+      </div>
+    </header>
+
+    <main class="container mx-auto">
+      <section id="about">
+        <div class="p-2">
+          <h2>About Us</h2>
+          <p class="text-pretty text-lg">
+            Ditch the sterile halls and impersonal queues. Welcome to the future
+            of healthcare, where medication access meets tech. MEDCOM isn't just
+            a pill dispenser, it's your 24/7 health concierge. Imagine refilling
+            prescriptions anytime, in a common language, guided by AI
+            whisperings. Authentication ensures your privacy while helical coil
+            dispense meds with high precision. This sleek kiosk isn't just
+            innovative, it's connected, integrating with your health data.
+            Forget pharmacy blues, say hello to MEDCOM – your gateway to a
+            healthier, stronger you. Unlock the future of personalized medicine,
+            one tap at a time.
+          </p>
+        </div>
+        <img
+          src="/static/images/about.jpeg"
+          height="50%"
+          width="100%"
+          alt=""
+        />
+      </section>
+
+      <section id="features">
+        <h2>Our Features</h2>
+        <div class="feature feature1 container mx-auto">
+          <img
+            src="/static/images/SL-080420-33360-20.jpg"
+            alt="Feature 1"
+            class="feature-image"
+          />
+          <h3>Feature 1</h3>
+          <p>
+            Uninterrupted service, round the clock: our machine operates 24/7
+            for your convenience.
+          </p>
+        </div>
+        <div class="feature feature2">
+          <img
+            src="/static/images/error1.jpg"
+            alt="Feature 2"
+            class="feature-image"
+          />
+          <h3>Feature 2</h3>
+          <p>
+            Ensuring precision in medication: our system operates flawlessly,
+            eliminating human error.
+          </p>
+        </div>
+        <div class="feature feature3">
+          <img
+            src="/static/images/queue.jpg"
+            alt="Feature 3"
+            class="feature-image"
+          />
+          <h3>Feature 3</h3>
+          <p>
+            Skip the queues: our system bypasses pharmacy lines for swift access
+            to medications.
+          </p>
+        </div>
+      </section>
+
+      <section id="team">
+        <h2>Our Team</h2>
+
+        <!-- Top photo -->
+        <div class="team-member container">
+          <img
+            src="/static/images/jayadevan-sir.jpeg"
+            alt="Our Guide"
+            class="mx-auto"
+          />
+          <p>Dr. Jayadevan R</p>
+          <p class="role">Assistant Professor ECE Department, GEC Palakkad</p>
+        </div>
+
+        <!-- Row of four photos -->
+        <div class="team-row">
+          <div class="team-member">
+            <img src="path_to_your_image" alt="Team Member 1" />
+            <p>Abin Satheesh K</p>
+          </div>
+          <div class="team-member">
+            <img src="/static/images/Sreedevi1.jpg" alt="Team Member 2" />
+            <p>Sreedevi K</p>
+          </div>
+          <div class="team-member">
+            <img src="/static/images/Dilsha.jpg" alt="Team Member 3" />
+            <p>Dilsha AD</p>
+          </div>
+          <div class="team-member">
+            <img src="path_to_your_image" alt="Team Member 4" />
+            <p>Jobin Jose MJ</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Get in Touch</h2>
+        <p>
+          Get in touch with us today! Our team is here to answer questions you
+          may have and help you with your medicine needs. Simply fill out the
+          form below with your name, email, and message, and we'll be in touch
+          shortly. We're excited to hear from you and help you achieve your
+          needs.
+        </p>
+        <form action="submit-form.php" method="post">
+          <input type="text" name="name" placeholder="Your Name" />
+          <input type="email" name="email" placeholder="Your Email" />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            rows="4"
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2023 MEDCOM. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+      <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>

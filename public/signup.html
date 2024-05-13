@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sign Up | MEDCOM</title>
+    <link rel="stylesheet" href="/static/signup.css" />
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <link rel="stylesheet" href="/static/out.css" />
+
+    <link
+      href="{{ url_for('templates', path='/signup.css') }}"
+      rel="stylesheet"
+    />
+
+    <link
+      href="{{ url_for('templates', path='/main.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#1F2937] grid place-items-center min-h-screen">
+    <!-- <header>
+      <nav>
+        <img
+          src="Website/1.png"
+          height="75px"
+          width="170px"
+          alt="company Logo"
+        />
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header> -->
+    <main class="space-y-4">
+      <div class="flex flex-col">
+
+      <h2 class="text-pretty text-2xl text-white text-center">
+        Signup | MEDCOM
+      </h2>
+      <div class="">
+        <div class="form">
+          <h2>Registration</h2>
+          <form action="" method="post">
+            <input
+              type="Email"
+              name="email"
+              placeholder="Enter Your Email ID"
+            />
+            <input
+              type="password"
+              name="password"
+              placeholder="Enter Your Password"
+            />
+            <input
+              type="password"
+              name="cpassword"
+              placeholder="Enter Your Confirm Password"
+            />
+            <button class="btn" name="submit" value="Register">
+              <a>Sign UP</a>
+            </button>
+            <div class="links">
+              <p style="color: white">
+                Already a member?<a style="color: orange" href="/login"
+                  >Sign In</a
+                >
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    </main>
+
+    <!-- <main>
+      <section id="about">
+        <h2>About Us</h2>
+        <p>
+          Ditch the sterile halls and impersonal queues. Welcome to the future
+          of healthcare, where medication access meets tech. MEDCOM isn't just a
+          pill dispenser, it's your 24/7 health concierge. Imagine refilling
+          prescriptions anytime, in a common language, guided by AI whisperings.
+          Authentication ensures your privacy while helical coil dispense meds
+          with high precision. This sleek kiosk isn't just innovative, it's
+          connected, integrating with your health data. Forget pharmacy blues,
+          say hello to MEDCOM – your gateway to a healthier, stronger you.
+          Unlock the future of personalized medicine, one tap at a time.
+        </p>
+        <img src="Website/about.jpeg" height="50%" width="100%" alt="" />
+      </section>
+
+      <section id="features">
+        <h2>Our Features</h2>
+        <div class="feature feature1">
+          <img
+            src="Website/SL-080420-33360-20.jpg"
+            alt="Feature 1"
+            class="feature-image"
+          />
+          <h3>Feature 1</h3>
+          <p>
+            Uninterrupted service, round the clock: our machine operates 24/7
+            for your convenience.
+          </p>
+        </div>
+        <div class="feature feature2">
+          <img src="Website/error1.jpg" alt="Feature 2" class="feature-image" />
+          <h3>Feature 2</h3>
+          <p>
+            Ensuring precision in medication: our system operates flawlessly,
+            eliminating human error.
+          </p>
+        </div>
+        <div class="feature feature3">
+          <img src="Website/queue.jpg" alt="Feature 3" class="feature-image" />
+          <h3>Feature 3</h3>
+          <p>
+            Skip the queues: our system bypasses pharmacy lines for swift access
+            to medications.
+          </p>
+        </div>
+      </section>
+
+      <section id="team">
+        <h2>Our Team</h2>
+
+        <!-- Top photo -->
+    <!-- <div class="team-member">
+          <img src="Website/jayadevan sir.jpeg" alt="Our Guide" />
+          <p>Dr. Jayadevan R</p>
+          <p class="role">Assistant Professor ECE Department, GEC Palakkad</p>
+        </div>
+
+        <!-- Row of four photos -->
+    <!-- <div class="team-row">
+          <div class="team-member">
+            <img src="path_to_your_image" alt="Team Member 1" />
+            <p>Abin Satheesh K</p>
+          </div>
+          <div class="team-member">
+            <img src="Website/Sreedevi1.jpg" alt="Team Member 2" />
+            <p>Sreedevi K</p>
+          </div>
+          <div class="team-member">
+            <img src="Website/Dilsha.jpg" alt="Team Member 3" />
+            <p>Dilsha AD</p>
+          </div>
+          <div class="team-member">
+            <img src="path_to_your_image" alt="Team Member 4" />
+            <p>Jobin Jose MJ</p>
+          </div>
+        </div>
+      </section> -->
+
+    <!-- <section id="contact">
+        <h2>Get in Touch</h2>
+        <p>
+          Get in touch with us today! Our team is here to answer questions you
+          may have and help you with your medicine needs. Simply fill out the
+          form below with your name, email, and message, and we'll be in touch
+          shortly. We're excited to hear from you and help you achieve your
+          needs.
+        </p>
+        <form action="submit-form.php" method="post">
+          <input type="text" name="name" placeholder="Your Name" />
+          <input type="email" name="email" placeholder="Your Email" />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            rows="4"
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section> -->
+    <!-- </main> -->
+    -->
+    <!-- <footer>
+      <p>Copyright &copy; 2024 MEDCOM. All rights reserved.</p>
+    </footer> -->
+    -->
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+      <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>

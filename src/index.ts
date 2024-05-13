@@ -45,7 +45,11 @@ const app = new Elysia()
       throw err;
     }
   })
-  .listen(3000);
+  .listen({ port: process.env.PORT || 3000 }, ({ hostname, port }) => {
+    const url = process.env.NODE_ENV === "production" ? "https" : "http";
+
+    console.log(`🦊 Elysia is running at ${url}://${hostname}:${port}`);
+  });
 
 function getContentType(ext: string) {
   switch (ext) {

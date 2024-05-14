@@ -12,7 +12,7 @@ RUN bun install --ci
 
 # Build public/ files (i.e. tailwind output)
 FROM deps as build
-COPY bun.lockb package.json tailwind.config.ts ./
+COPY bun.lockb package.json tailwind.config.js ./
 COPY public/ ./public/
 COPY src/ ./src/
 RUN bun install

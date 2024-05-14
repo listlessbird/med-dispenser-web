@@ -29,7 +29,7 @@ USER elysiajs
 COPY --from=deps /app/node_modules/ ./node_modules/
 COPY --from=build /app/public/ ./public/
 COPY src/ ./src/
-COPY package.json tailwind.config.ts tsconfig.json ./
+COPY package.json tailwind.config.js tsconfig.json ./
 # Set environment variables
 ENV NODE_ENV=production
 ENV PORT 3000

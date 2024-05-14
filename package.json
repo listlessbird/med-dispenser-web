@@ -9,13 +9,17 @@
     "dev:tailwind": "bunx tailwindcss -i ./public/main.css -o ./public/out.css --watch"
   },
   "dependencies": {
+    "@elysiajs/cookie": "^0.8.0",
     "@elysiajs/html": "^1.0.2",
+    "@elysiajs/jwt": "^1.0.2",
     "@elysiajs/static": "^1.0.3",
+    "drizzle-orm": "^0.30.10",
     "elysia": "latest",
     "tailwindcss": "^3.4.3"
   },
   "devDependencies": {
-    "bun-types": "^1.1.8"
+    "bun-types": "^1.1.8",
+    "drizzle-kit": "^0.21.1"
   },
   "module": "src/index.js"
 }

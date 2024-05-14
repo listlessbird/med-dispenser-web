@@ -5,4 +5,5 @@ export const users = sqliteTable("users", {
   id: text("id").primaryKey(),
   username: text("username"),
   hash: text("hash"),
+  salt: text("salt"),
 });

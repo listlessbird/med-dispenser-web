@@ -6,7 +6,8 @@
     "start": "NODE_ENV=production bun src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "bun run --watch src/index.ts",
-    "dev:tailwind": "bunx tailwindcss -i ./public/main.css -o ./public/out.css --watch"
+    "dev:tailwind": "bunx tailwindcss -i ./public/main.css -o ./public/out.css --watch",
+    "db:migrate": "bun run src/lib/migrate.ts"
   },
   "dependencies": {
     "@elysiajs/cookie": "^0.8.0",

@@ -6,6 +6,8 @@ import { join, extname } from "path";
 
 import { signupRouter } from "./signup";
 import { loginRouter } from "./login";
+import cookie from "@elysiajs/cookie";
+import jwt from "@elysiajs/jwt";
 
 const staticDir = "./public";
 
